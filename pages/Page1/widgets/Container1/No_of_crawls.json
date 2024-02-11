@@ -7,14 +7,15 @@
     "type": "SELECT_WIDGET",
     "serverSideFiltering": false,
     "topRowBeforeCollapse": 32,
-    "defaultOptionValue": "4",
+    "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Platform_Metadata.data[0].crawlDates.length))(No_of_crawls.options, No_of_crawls.serverSideFiltering) }}",
     "animateLoading": true,
     "leftColumn": 2,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "borderRadius"},
         {"key": "isVisible"},
-        {"key": "sourceData"}
+        {"key": "sourceData"},
+        {"key": "defaultOptionValue"}
     ],
     "placeholderText": "Select option",
     "isDisabled": false,
@@ -45,9 +46,9 @@
     "hideCard": false,
     "mobileRightColumn": 35,
     "parentColumnSpace": 19.5,
-    "dynamicTriggerPathList": [],
+    "dynamicTriggerPathList": [{"key": "onOptionChange"}],
     "labelPosition": "Top",
-    "sourceData": "{{\n(Platform_Metadata.data[0].crawlDates.map((elem,ind)=>({ \"key\":String(ind+1),\n\"value\":String(ind+1)})))}}",
+    "sourceData": "{{\n(Platform_Metadata.data[0].crawlDates.map((elem,ind)=>({ \"label\":String(ind+1),\n\"value\":ind+1})))}}",
     "key": "hy4anm62dr",
     "labelTextSize": "0.875rem",
     "isDeprecated": false,
@@ -59,10 +60,11 @@
     "labelAlignment": "left",
     "renderMode": "CANVAS",
     "mobileTopRow": 10,
-    "optionLabel": "key",
+    "optionLabel": "label",
     "responsiveBehavior": "fill",
     "originalTopRow": 32,
     "mobileLeftColumn": 15,
     "maxDynamicHeight": 9000,
+    "onOptionChange": "",
     "minDynamicHeight": 4
 }

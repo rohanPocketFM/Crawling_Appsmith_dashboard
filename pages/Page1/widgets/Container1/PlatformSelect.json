@@ -63,6 +63,6 @@
     "responsiveBehavior": "fill",
     "mobileLeftColumn": 2,
     "maxDynamicHeight": 9000,
-    "onOptionChange": "{{Platform_Metadata.run()\n  .then(() => { GenreSelect.setSelectedOption(\"\"); GenderSelect.setSelectedOption(\"\");\nTagsMultiSelect.setSelectedOptions(\"\");\t\tChapterFilter.setValue(\"\");\ninCatalogueMultiSelect.setSelectedOptions(\"\");\nbookCompleteStatusSelect.setSelectedOption(\"\");\t\nBook_title_search.setValue(\"\");\n  })\n  .catch(() => {});\n}}",
+    "onOptionChange": "{{Platform_Metadata.run()\n.then(filters_reset.reset()).catch(()=>{}) }}",
     "minDynamicHeight": 4
 }
