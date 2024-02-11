@@ -190,7 +190,7 @@
                 "position": 1,
                 "isDisabled": true,
                 "sourceData": 58633218,
-                "fieldType": "Number Input"
+                "fieldType": "Text Input"
             },
             "customField1": {
                 "labelTextSize": "0.875rem",
