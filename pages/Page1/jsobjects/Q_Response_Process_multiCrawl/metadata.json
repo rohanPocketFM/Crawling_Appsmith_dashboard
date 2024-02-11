@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Q_Response_Process_multiCrawl",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Page1_Q_Response_Process_multiCrawl",
+  "deleted": false,
+  "gitSyncId": "65c6365fb925fd17eda997c9_65c8992f3bebb663dca00b5f"
+}

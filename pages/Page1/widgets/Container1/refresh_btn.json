@@ -2,7 +2,7 @@
     "labelTextSize": "0.875rem",
     "boxShadow": "none",
     "widgetName": "refresh_btn",
-    "onClick": "{{FindQuery.run().then(Query_or_search.setValue(false))}}",
+    "onClick": "{{Q_Response_Process_multiCrawl.queryResponseProcessor().then(Query_or_search.setValue(false))}}",
     "rightColumn": 64,
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "dynamicPropertyPathList": [{"key": "onClick"}],

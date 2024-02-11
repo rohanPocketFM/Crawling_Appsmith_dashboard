@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "filters_reset",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Page1_filters_reset",
+  "deleted": false,
+  "gitSyncId": "65c6365fb925fd17eda997c9_65c8a25a3bebb663dca00b75"
+}

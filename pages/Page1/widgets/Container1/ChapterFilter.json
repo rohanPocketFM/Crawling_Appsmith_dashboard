@@ -24,7 +24,7 @@
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
     "showStepArrows": false,
     "bottomRowBeforeCollapse": 31,
-    "isVisible": "{{!!PlatformSelect.selectedOptionLabel && ((Platform_Filters.data.length==1) && (Platform_Filters.data[0].chaptersTotal)!=undefined)}}",
+    "isVisible": "{{!!PlatformSelect.selectedOptionLabel && ((Platform_Metadata.data.length==1) && (Platform_Metadata.data[0].chaptersTotal)!=undefined)}}",
     "version": 2,
     "tags": [
         "Suggested",

@@ -104,5 +104,5 @@
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 8,
     "xAxisName": "Crawl date",
-    "chartType": "CUSTOM_ECHART"
+    "chartType": "LINE_CHART"
 }
