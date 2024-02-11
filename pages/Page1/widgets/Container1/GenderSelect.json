@@ -9,7 +9,7 @@
     "topRowBeforeCollapse": 16,
     "defaultOptionValue": "",
     "animateLoading": true,
-    "leftColumn": 2,
+    "leftColumn": 16,
     "dynamicBindingPathList": [
         {"key": "sourceData"},
         {"key": "isVisible"},
@@ -50,7 +50,7 @@
     "key": "c8r9p7ed5x",
     "labelTextSize": "0.875rem",
     "isDeprecated": false,
-    "rightColumn": 13,
+    "rightColumn": 28,
     "widgetId": "u7lapf8ma4",
     "optionValue": "value",
     "minWidth": 450,

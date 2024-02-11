@@ -63,6 +63,6 @@
     "responsiveBehavior": "fill",
     "mobileLeftColumn": 2,
     "maxDynamicHeight": 9000,
-    "onOptionChange": "{{Platform_Metadata.run()\n.then(filters_reset.reset()).catch(()=>{}) }}",
+    "onOptionChange": "{{Platform_Metadata.run()\n.then(filters_reset.reset()) }}",
     "minDynamicHeight": 4
 }

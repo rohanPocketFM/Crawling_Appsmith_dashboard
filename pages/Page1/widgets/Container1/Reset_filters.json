@@ -3,9 +3,12 @@
     "boxShadow": "none",
     "mobileBottomRow": 44,
     "widgetName": "Reset_filters",
-    "onClick": "{{filters_reset.reset().catch(()=>{})}}",
+    "onClick": "{{filters_reset.reset()}}",
     "buttonColor": "#858282",
-    "dynamicPropertyPathList": [{"key": "onClick"}],
+    "dynamicPropertyPathList": [
+        {"key": "onClick"},
+        {"key": "isVisible"}
+    ],
     "displayName": "Button",
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
     "searchTags": [
@@ -22,7 +25,10 @@
     "parentColumnSpace": 18.90625,
     "dynamicTriggerPathList": [{"key": "onClick"}],
     "leftColumn": 11,
-    "dynamicBindingPathList": [{"key": "borderRadius"}],
+    "dynamicBindingPathList": [
+        {"key": "borderRadius"},
+        {"key": "isVisible"}
+    ],
     "text": "Reset filters",
     "isDisabled": false,
     "key": "mzqqebmqvo",
@@ -31,7 +37,7 @@
     "isDefaultClickDisabled": true,
     "widgetId": "h1u8vfaxpt",
     "minWidth": 120,
-    "isVisible": true,
+    "isVisible": "{{!!PlatformSelect.selectedOptionLabel && (Platform_Metadata.data.length==1)}}",
     "recaptchaType": "V3",
     "version": 1,
     "parentId": "59rw5mx0bq",
