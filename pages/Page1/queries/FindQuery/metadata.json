@@ -25,7 +25,7 @@
             "data": "44"
           },
           "arrayPipelines": {
-            "data": "[\n  {\n    $match:\n      {   \n\t\t\t\t{{PlatformSelect.selectedOptionValue === \"\"? \"\" : [\"\",\"platform\",\":\" ,PlatformSelect.selectedOptionValue,\",\"].join('\"')}} \n\t\t\t\t{{GenderSelect.selectedOptionValue === \"\"? \"\" : [ \"\",\"gender\",\":\" ,GenderSelect.selectedOptionValue, \",\"].join('\"')}}\n\t\t\t\t{{GenreSelect.selectedOptionValue === \"\" ? \"\" : [ \"\",\"genre\",\":\" ,GenreSelect.selectedOptionValue, \",\"].join('\"')}}\n\t\t\t  {{TagsMultiSelect.selectedOptionValues.length === 0? \"\" : [ \"tags:{ $in :[\" ,TagsMultiSelect.selectedOptionValues.join('\",\"'), \"] },\"].join('\"')}}\n\t\t\t\t{{ChapterFilter.text === null ? \"\": [\"chaptersTotal\",\": {$gte:\" ,ChapterFilter.text,\"},\"].join('') }}\t\n\t\t\t{{bookCompleteStatusSelect.selectedOptionValue === \"\"? \"\" : [\"\",\"status\",\":\" ,bookCompleteStatusSelect.selectedOptionValue,\",\"].join('\"')}}\n\t\t\t\t{{inCatalogueMultiSelect.selectedOptionValues.length === 0? \"\" : [\"inCatalogue:{ $in :[\" ,inCatalogueMultiSelect.selectedOptionValues.join('\",\"'),\"] },\"].join('\"')}}\n\t\t\t\t\n\t\t\t}\n  },\n\t{\n    $sort: {\n\t\t\t\"timeSeries.views\":-1\n  \t}\n\t},\n\t{\n\t\t$skip: {{(Table1.pageNo - 1)*Table1.pageSize}}\n\t},\n\t{\n  \t\"$limit\": {{Table1.pageSize}}\n  },\n  {\n    $project: {\n\t\t\t_id:1,\n      title: 1,\n\t\t\tinCatalogue:1,\n      genre: 1,\n\t\t\tplatform:1,\n      tags: 1,\n      chaptersTotal: 1,\n      bookCreateTime: 1,\n      rating: 1,\n      gender: 1,\n\t\t\tstatus:1,\n      numOfRatings: 1,\n\t\t\tbookUrl:1,\n\t\t\tlastUpdateTime:1,\n\t\t\tpfmStatus:1,\n\t\t  pfmShowTitle:1,\n      views: {\n        $arrayElemAt: [\"$timeSeries.views\", 0],\n      },\n\t\t\ttimeSeries:{ $slice: [\"$timeSeries\", {{No_of_crawls.selectedOptionValue}}] }\n    }\n  }\n]"
+            "data": "[\n  {\n    $match: {{Query_String.filter()}}   \n  },\n\t{\n    $sort: {\n\t\t\t\"timeSeries.views\":-1\n  \t}\n\t},\n\t{\n\t\t$skip: {{(Table1.pageNo - 1)*Table1.pageSize}}\n\t},\n\t{\n  \t\"$limit\": {{Table1.pageSize}}\n  },\n  {\n    $project: {{Query_String.project()}}\n  }\n]"
           }
         },
         "body": {
@@ -134,22 +134,17 @@
     "jsonPathKeys": [
       "(Table1.pageNo - 1)*Table1.pageSize",
       "(data_table.pageNo - 1) * data_table.pageSize",
-      "ChapterFilter.text === null ? \"\": [\"chaptersTotal\",\": {$gte:\" ,ChapterFilter.text,\"},\"].join('') ",
-      "GenderSelect.selectedOptionValue === \"\"? \"\" : [ \"\",\"gender\",\":\" ,GenderSelect.selectedOptionValue, \",\"].join('\"')",
       "GenderSelect.selectedOptionValue === \"\"? \"\" : [\"\",\"gender\",\":\" ,GenderSelect.selectedOptionValue,\",\"].join('\"')",
       "GenreMultiSelect.selectedOptionValues.length === 0? \"\" : [\"genre:{ $in :[\" ,GenreMultiSelect.selectedOptionValues.join('\",\"'),\"] },\"].join('\"')",
-      "GenreSelect.selectedOptionValue === \"\" ? \"\" : [ \"\",\"genre\",\":\" ,GenreSelect.selectedOptionValue, \",\"].join('\"')",
-      "No_of_crawls.selectedOptionValue",
       "PlatformSelect.selectedOptionValue === \"\"? \"\" : [\"\",\"platform\",\":\" ,PlatformSelect.selectedOptionValue,\",\"].join('\"')",
+      "Query_String.filter()",
+      "Query_String.project()",
       "Table1.pageSize",
-      "TagsMultiSelect.selectedOptionValues.length === 0? \"\" : [ \"tags:{ $in :[\" ,TagsMultiSelect.selectedOptionValues.join('\",\"'), \"] },\"].join('\"')",
       "TagsMultiSelect.selectedOptionValues.length === 0? \"\" : [\"tags:{ $in :[\" ,TagsMultiSelect.selectedOptionValues.join('\",\"'),\"] },\"].join('\"')",
-      "bookCompleteStatusSelect.selectedOptionValue === \"\"? \"\" : [\"\",\"status\",\":\" ,bookCompleteStatusSelect.selectedOptionValue,\",\"].join('\"')",
       "data_table.pageSize",
       "data_table.searchText||\"\"",
       "data_table.sortOrder.column || 'authorName'",
       "data_table.sortOrder.order == \"desc\" ? -1 : 1",
-      "inCatalogueMultiSelect.selectedOptionValues.length === 0? \"\" : [\"inCatalogue:{ $in :[\" ,inCatalogueMultiSelect.selectedOptionValues.join('\",\"'),\"] },\"].join('\"')",
       "key_select.selectedOptionValue",
       "order_select.selectedOptionValue"
     ],

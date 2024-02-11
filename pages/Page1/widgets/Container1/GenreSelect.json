@@ -21,7 +21,7 @@
     "dynamicHeight": "FIXED",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
     "bottomRowBeforeCollapse": 23,
-    "isVisible": "{{!!PlatformSelect.selectedOptionLabel && ((Platform_Filters.data.length==1) && (Platform_Filters.data[0].genre)!=undefined)}}",
+    "isVisible": "{{!!PlatformSelect.selectedOptionLabel && ((Platform_Metadata.data.length==1) && (Platform_Metadata.data[0].genre)!=undefined)}}",
     "version": 1,
     "tags": [
         "Suggested",
@@ -46,7 +46,7 @@
     "parentColumnSpace": 14.26171875,
     "dynamicTriggerPathList": [],
     "labelPosition": "Top",
-    "sourceData": "{{Platform_Filters.data[0].genre\n.map((obj)=>{return {'label': obj, 'value': obj }})}}",
+    "sourceData": "{{Platform_Metadata.data[0].genre\n.map((obj)=>{return {'label': obj, 'value': obj }})}}",
     "key": "c8r9p7ed5x",
     "labelTextSize": "0.875rem",
     "isDeprecated": false,

@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "myFun1",
-    "fullyQualifiedName": "QueryProcess_multiCrawl_spread.myFun1",
+    "name": "myDict",
+    "fullyQualifiedName": "Q_Response_Process_multiCrawl.myDict",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,7 +14,7 @@
       "userPermissions": []
     },
     "pageId": "Page1",
-    "collectionId": "Page1_QueryProcess_multiCrawl_spread",
+    "collectionId": "Page1_Q_Response_Process_multiCrawl",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -23,7 +23,6 @@
       "jsArguments": []
     },
     "executeOnLoad": false,
-    "clientSideExecution": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -32,13 +31,13 @@
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-02-07T03:41:55Z"
+    "createdAt": "2024-02-08T05:31:15Z"
   },
-  "id": "Page1_QueryProcess_multiCrawl_spread.myFun1",
+  "id": "Page1_Q_Response_Process_multiCrawl.myDict",
   "deleted": false,
-  "gitSyncId": "65a52ae61f076a52e45a4862_65c2fc03052443396416240d"
+  "gitSyncId": "65a52ae61f076a52e45a4862_65c467232717f21db7dce310"
 }

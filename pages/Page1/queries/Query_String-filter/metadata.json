@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "myDict",
-    "fullyQualifiedName": "QueryProcess_multiCrawl_spread.myDict",
+    "name": "filter",
+    "fullyQualifiedName": "Query_String.filter",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,7 +14,7 @@
       "userPermissions": []
     },
     "pageId": "Page1",
-    "collectionId": "Page1_QueryProcess_multiCrawl_spread",
+    "collectionId": "Page1_Query_String",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -23,6 +23,7 @@
       "jsArguments": []
     },
     "executeOnLoad": false,
+    "clientSideExecution": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -35,9 +36,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-02-08T05:31:15Z"
+    "createdAt": "2024-02-09T15:16:28Z"
   },
-  "id": "Page1_QueryProcess_multiCrawl_spread.myDict",
+  "id": "Page1_Query_String.filter",
   "deleted": false,
-  "gitSyncId": "65a52ae61f076a52e45a4862_65c467232717f21db7dce310"
+  "gitSyncId": "65c6365fb925fd17eda997c9_65c641ccd4613c2caeea7eeb"
 }

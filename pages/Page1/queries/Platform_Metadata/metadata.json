@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "Platform_Filters",
+    "name": "Platform_Metadata",
     "datasource": {
       "name": "MongoDB-TrendingTales",
       "pluginId": "mongo-plugin",
@@ -117,7 +117,7 @@
     "userPermissions": [],
     "createdAt": "2024-01-12T10:35:20Z"
   },
-  "id": "Page1_Platform_Filters",
+  "id": "Page1_Platform_Metadata",
   "deleted": false,
   "gitSyncId": "659f137055999216851b9d72_65a115e880d2d5524206feec"
 }

@@ -1,6 +1,6 @@
 {
   "unpublishedCollection": {
-    "name": "QueryProcess_multiCrawl_spread",
+    "name": "Q_Response_Process_multiCrawl",
     "pageId": "Page1",
     "pluginId": "js-plugin",
     "pluginType": "JS",
@@ -18,7 +18,7 @@
     ],
     "userPermissions": []
   },
-  "id": "Page1_QueryProcess_multiCrawl_spread",
+  "id": "Page1_Q_Response_Process_multiCrawl",
   "deleted": false,
   "gitSyncId": "65a52ae61f076a52e45a4862_65c2fc030524433964162411"
 }
