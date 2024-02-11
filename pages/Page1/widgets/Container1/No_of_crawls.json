@@ -7,17 +7,16 @@
     "type": "SELECT_WIDGET",
     "serverSideFiltering": false,
     "topRowBeforeCollapse": 32,
-    "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Platform_Metadata.data[0].crawlDates.length))(No_of_crawls.options, No_of_crawls.serverSideFiltering) }}",
+    "defaultOptionValue": "",
     "animateLoading": true,
     "leftColumn": 2,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "borderRadius"},
         {"key": "isVisible"},
-        {"key": "sourceData"},
-        {"key": "defaultOptionValue"}
+        {"key": "sourceData"}
     ],
-    "placeholderText": "Select option",
+    "placeholderText": "",
     "isDisabled": false,
     "isRequired": false,
     "dynamicHeight": "FIXED",

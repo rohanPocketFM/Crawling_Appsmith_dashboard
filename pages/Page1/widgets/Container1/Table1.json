@@ -31,12 +31,12 @@
         {"key": "primaryColumns.bookId.computedValue"},
         {"key": "primaryColumns.inCatalogue.computedValue"},
         {"key": "primaryColumns.authorName.computedValue"},
-        {"key": "primaryColumns.v2_2024_01_31.computedValue"},
-        {"key": "primaryColumns.v3_2024_02_09.computedValue"},
+        {"key": "primaryColumns.pfmStatus.computedValue"},
+        {"key": "primaryColumns.pfmShowTitle.computedValue"},
         {"key": "primaryColumns.v0_2023_12_28.computedValue"},
         {"key": "primaryColumns.v1_2024_01_13.computedValue"},
-        {"key": "primaryColumns.pfmStatus.computedValue"},
-        {"key": "primaryColumns.pfmShowTitle.computedValue"}
+        {"key": "primaryColumns.v2_2024_01_31.computedValue"},
+        {"key": "primaryColumns.v3_2024_02_09.computedValue"}
     ],
     "needsHeightForContent": true,
     "leftColumn": 1,
@@ -78,7 +78,7 @@
         }
     },
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "columnUpdatedAt": 1707649875658,
+    "columnUpdatedAt": 1707655202180,
     "originalBottomRow": 120,
     "primaryColumnId": "_id",
     "defaultSelectedRowIndices": [0],
@@ -101,12 +101,13 @@
         "bookId",
         "inCatalogue",
         "authorName",
+        "pfmStatus",
+        "pfmShowTitle",
+        "_id",
         "v0_2023_12_28",
         "v1_2024_01_13",
         "v2_2024_01_31",
         "v3_2024_02_09",
-        "pfmStatus",
-        "pfmShowTitle",
         "customColumn1"
     ],
     "dynamicPropertyPathList": [

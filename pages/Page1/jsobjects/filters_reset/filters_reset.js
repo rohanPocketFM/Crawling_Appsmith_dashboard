@@ -7,5 +7,6 @@ export default {
 		inCatalogueMultiSelect.setSelectedOptions("");
 		bookCompleteStatusSelect.setSelectedOption("");
 		Book_title_search.setValue("");
+		No_of_crawls.setSelectedOption("");
 	}
 }

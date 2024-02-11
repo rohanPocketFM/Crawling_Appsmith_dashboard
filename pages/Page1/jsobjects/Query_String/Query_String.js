@@ -34,8 +34,9 @@ export default {
 			queryP["pfmStatus"]=1
 		  queryP["pfmShowTitle"]=1
       queryP["views"]= { $arrayElemAt: ["$timeSeries.views", 0]}
-			queryP["timeSeries"]={ $slice: ["$timeSeries",parseInt(No_of_crawls.selectedOptionValue)] }
-		
+			if (No_of_crawls.selectedOptionValue!=""){
+				queryP["timeSeries"]={ $slice: ["$timeSeries",parseInt(No_of_crawls.selectedOptionValue)] }
+			}
 		return queryP
     }
 }
