@@ -16,7 +16,7 @@
         {"key": "isVisible"},
         {"key": "sourceData"}
     ],
-    "placeholderText": "",
+    "placeholderText": "Optional Select",
     "isDisabled": false,
     "isRequired": false,
     "dynamicHeight": "FIXED",
