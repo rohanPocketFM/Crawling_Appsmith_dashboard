@@ -6,7 +6,7 @@
     "type": "INPUT_WIDGET_V2",
     "animateLoading": true,
     "resetOnSubmit": true,
-    "leftColumn": 7,
+    "leftColumn": 6,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "borderRadius"},
@@ -47,7 +47,7 @@
     "key": "3ias4v2zy1",
     "labelTextSize": "0.875rem",
     "isDeprecated": false,
-    "rightColumn": 59,
+    "rightColumn": 58,
     "widgetId": "2xjdzic5jz",
     "minWidth": 450,
     "label": "Total Views",

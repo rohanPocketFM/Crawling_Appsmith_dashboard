@@ -6,7 +6,7 @@
     "type": "INPUT_WIDGET_V2",
     "animateLoading": true,
     "resetOnSubmit": true,
-    "leftColumn": 7,
+    "leftColumn": 6,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "borderRadius"}
@@ -48,7 +48,7 @@
     "labelTextSize": "0.875rem",
     "onTextChanged": "{{Pfm_Show_Search.run()}}",
     "isDeprecated": false,
-    "rightColumn": 59,
+    "rightColumn": 58,
     "widgetId": "qbmhtdwjsp",
     "minWidth": 450,
     "label": "Show Search Pfm",

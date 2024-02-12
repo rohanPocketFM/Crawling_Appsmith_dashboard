@@ -8,7 +8,7 @@
     "serverSideFiltering": false,
     "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Table1.triggeredRow.pfmShowTitle))(Form_Link_book_with_show.options, Form_Link_book_with_show.serverSideFiltering) }}",
     "animateLoading": true,
-    "leftColumn": 7,
+    "leftColumn": 6,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "borderRadius"},
@@ -45,7 +45,7 @@
     "key": "u5jcrsuhfd",
     "labelTextSize": "0.875rem",
     "isDeprecated": false,
-    "rightColumn": 59,
+    "rightColumn": 58,
     "widgetId": "fojsyrknq7",
     "optionValue": "value",
     "minWidth": 450,
