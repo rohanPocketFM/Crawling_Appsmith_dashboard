@@ -14,7 +14,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1250,
+          "bottomRow": 1330,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -43,6 +43,18 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Page1_Pfm_Show_Search",
+              "name": "Pfm_Show_Search",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "encodeURIComponent(Form_pfm_show_search.text)"
+              ],
               "timeoutInMillisecond": 10000
             }
           ]

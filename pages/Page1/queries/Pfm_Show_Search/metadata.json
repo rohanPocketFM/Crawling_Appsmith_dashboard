@@ -82,7 +82,7 @@
       "httpMethod": "GET",
       "selfReferencingDataPaths": []
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "path"
