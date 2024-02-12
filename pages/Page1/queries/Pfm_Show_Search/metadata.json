@@ -72,7 +72,7 @@
       "queryParameters": [
         {
           "key": "query",
-          "value": "{{encodeURIComponent(JSONForm1.formData.Pfm_Show_search_json)}}"
+          "value": "{{encodeURIComponent(Form_pfm_show_search.text)}}"
         },
         {
           "key": "is_novel",
@@ -95,7 +95,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "encodeURIComponent(JSONForm1.formData.Pfm_Show_search_json)"
+      "encodeURIComponent(Form_pfm_show_search.text)"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,

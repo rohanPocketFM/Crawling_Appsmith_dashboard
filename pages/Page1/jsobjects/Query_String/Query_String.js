@@ -22,21 +22,22 @@ export default {
 		if (inCatalogueMultiSelect.selectedOptionValues.length > 0) {
 			query["inCatalogue"]={ $in : inCatalogueMultiSelect.selectedOptionValues}
 		};
-		
+
 		return query
 	},
-	
+
 	project (){
-		  let queryP = {"_id":1}
-			Platform_Metadata.data[0].displayFields.forEach(elem=>{
-				queryP[elem]=1
-			});
-			queryP["pfmStatus"]=1
-		  queryP["pfmShowTitle"]=1
-      queryP["views"]= { $arrayElemAt: ["$timeSeries.views", 0]}
-			if (No_of_crawls.selectedOptionValue!=""){
-				queryP["timeSeries"]={ $slice: ["$timeSeries",parseInt(No_of_crawls.selectedOptionValue)] }
-			}
+		let queryP = {"_id":1}
+		Platform_Metadata.data[0].displayFields.forEach(elem=>{
+			queryP[elem]=1
+		});
+		queryP["pfmStatus"]=1
+		queryP["pfmShowTitle"]=1
+		queryP["pfmShowId"]=1
+		queryP["views"]= { $arrayElemAt: ["$timeSeries.views", 0]}
+		if (No_of_crawls.selectedOptionValue!=""){
+			queryP["timeSeries"]={ $slice: ["$timeSeries",parseInt(No_of_crawls.selectedOptionValue)] }
+		}
 		return queryP
-    }
+	}
 }

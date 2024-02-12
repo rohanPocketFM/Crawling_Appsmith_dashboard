@@ -309,7 +309,8 @@
     },
     "dynamicPropertyPathList": [
         {"key": "schema.__root_schema__.children.bookCreateTime.defaultValue"},
-        {"key": "sourceData"}
+        {"key": "sourceData"},
+        {"key": "onSubmit"}
     ],
     "displayName": "JSON Form",
     "bottomRow": 67,

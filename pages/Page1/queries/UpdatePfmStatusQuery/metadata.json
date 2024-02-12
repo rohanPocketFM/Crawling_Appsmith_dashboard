@@ -83,7 +83,7 @@
         },
         "misc": {
           "formToNativeQuery": {
-            "data": "{\n  \"update\": \"books\",\n  \"updates\": [{\n    \"q\": { _id: ObjectId({{String(Table1.triggeredRow._id)}}) },\n    \"u\": {\n  $set:{\n    \n    'pfmStatus':{{JSONForm1.formData.Pocketfm_status_json}}\n pfmShowTitle : {{JSONForm1.formData.Show_Bind_with_Novel_json}}\n  \n  \n  }\n},\n    \"multi\": false,\n  }]\n}\n",
+            "data": "{\n  \"update\": \"books\",\n  \"updates\": [{\n    \"q\": { _id: ObjectId({{String(Table1.triggeredRow._id)}}) },\n    \"u\": {\n  $set:  {{update_Link_show.link_show()}}\n},\n    \"multi\": false,\n  }]\n}\n",
             "status": "SUCCESS"
           }
         },
@@ -104,7 +104,7 @@
             "componentData": "SINGLE"
           },
           "update": {
-            "data": "{\n  $set:{\n    \n    'pfmStatus':{{JSONForm1.formData.Pocketfm_status_json}}\n pfmShowTitle : {{JSONForm1.formData.Show_Bind_with_Novel_json}}\n  \n  \n  }\n}",
+            "data": "{\n  $set:  {{update_Link_show.link_show()}}\n}",
             "viewType": "component",
             "componentData": "{\n  \"authorName\" : {{update_col_1.text}},\n\t\"title\" : {{update_col_2.text}},\n  \"bookCreateTime\" : {{update_col_3.text}},\n  \"bookId\" : {{update_col_4.text}}\n}"
           }
@@ -124,10 +124,9 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "JSONForm1.formData.Pocketfm_status_json",
-      "JSONForm1.formData.Show_Bind_with_Novel_json",
       "String(Table1.triggeredRow._id)",
       "data_table.selectedRow._id",
+      "update_Link_show.link_show()",
       "update_col_1.text",
       "update_col_2.text",
       "update_col_3.text",

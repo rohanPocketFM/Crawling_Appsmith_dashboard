@@ -16,7 +16,7 @@
         {"key": "isVisible"},
         {"key": "sourceData"}
     ],
-    "placeholderText": "",
+    "placeholderText": "Optional Select",
     "isDisabled": false,
     "isRequired": false,
     "dynamicHeight": "FIXED",
@@ -47,6 +47,7 @@
     "parentColumnSpace": 19.5,
     "dynamicTriggerPathList": [{"key": "onOptionChange"}],
     "labelPosition": "Top",
+    "labelTextColor": "#71717a",
     "sourceData": "{{\n(Platform_Metadata.data[0].crawlDates.map((elem,ind)=>({ \"label\":String(ind+1),\n\"value\":ind+1})))}}",
     "key": "hy4anm62dr",
     "labelTextSize": "0.875rem",
