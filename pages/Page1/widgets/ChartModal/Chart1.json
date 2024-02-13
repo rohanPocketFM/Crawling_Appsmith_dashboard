@@ -82,7 +82,7 @@
         }
     },
     "onDataPointClick": "",
-    "customEChartConfig": "{{ ((chartType) => ( \n{\n  xAxis: {\n\t\t type: 'time',\n\t\t  \"boundaryGap\": [\"10%\", \"10%\"]\n\t},\n  yAxis: {\n\t\tmin:\"dataMin\",\n\t\tmax:\"dataMax\",\n\n\t},\n  series: [\n    {\n      symbolSize: 20,\n      data: chart_data_process.funcChart()\n\t\t\t\n\t\t\t,type: 'line'\n    }\n  ]\n}\n))(Chart1.chartType) }}",
+    "customEChartConfig": "{{ ((chartType) => ( \n{\n  xAxis: {\n\t\t type: 'time',\n\t\t  \"boundaryGap\": [\"10%\", \"10%\"]\n\t},\n  yAxis: {\n\t\tmin:\"dataMin\",\n\t\tmax:\"dataMax\",\n\n\t},\n  series: [\n    {\n      symbolSize: 20,\n      data: chart_data_process.funcChart()\n\t\t\t\n\t\t\t,type: 'line',\n\t\t\t\n\t\t\t\n\t\t}\n  ]\n}\n))(Chart1.chartType) }}",
     "flexVerticalAlignment": "start",
     "showDataPointLabel": false,
     "key": "wgjalul0xb",
