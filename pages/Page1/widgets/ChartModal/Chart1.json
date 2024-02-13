@@ -30,7 +30,8 @@
     "dynamicBindingPathList": [
         {"key": "borderRadius"},
         {"key": "boxShadow"},
-        {"key": "chartData.noieao82zy.data"}
+        {"key": "chartData.noieao82zy.data"},
+        {"key": "customEChartConfig"}
     ],
     "leftColumn": 2,
     "customFusionChartConfig": {
@@ -81,7 +82,7 @@
         }
     },
     "onDataPointClick": "",
-    "customEChartConfig": "{\n  \"v0_2023_12_28\": \"136,129,169\",\n  \"v1_2024_01_13\": \"136,183,376\",\n  \"v2_2024_01_31\": \"136,240,433\"\n}",
+    "customEChartConfig": "{{ ((chartType) => ( \n{\n  xAxis: {\n\t\t type: 'time',\n\t\t  \"boundaryGap\": [\"10%\", \"10%\"]\n\t},\n  yAxis: {\n\t\tmin:\"dataMin\",\n\t\tmax:\"dataMax\",\n\n\t},\n  series: [\n    {\n      symbolSize: 20,\n      data: chart_data_process.funcChart()\n\t\t\t\n\t\t\t,type: 'line'\n    }\n  ]\n}\n))(Chart1.chartType) }}",
     "flexVerticalAlignment": "start",
     "showDataPointLabel": false,
     "key": "wgjalul0xb",
@@ -104,5 +105,5 @@
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 8,
     "xAxisName": "Crawl date",
-    "chartType": "LINE_CHART"
+    "chartType": "CUSTOM_ECHART"
 }

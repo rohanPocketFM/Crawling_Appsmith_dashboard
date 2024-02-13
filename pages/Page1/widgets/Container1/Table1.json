@@ -34,6 +34,7 @@
         {"key": "primaryColumns.pfmShowId.computedValue"},
         {"key": "primaryColumns.bookId.computedValue"},
         {"key": "primaryColumns.authorName.computedValue"},
+        {"key": "primaryColumns.customColumn2.isCellVisible"},
         {"key": "primaryColumns.v0_2023_12_28.computedValue"},
         {"key": "primaryColumns.v1_2024_01_13.computedValue"},
         {"key": "primaryColumns.v2_2024_01_31.computedValue"},
@@ -79,7 +80,7 @@
         }
     },
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "columnUpdatedAt": 1707766850672,
+    "columnUpdatedAt": 1707807434949,
     "originalBottomRow": 120,
     "primaryColumnId": "_id",
     "defaultSelectedRowIndices": [0],
@@ -89,7 +90,6 @@
     "columnOrder": [
         "title",
         "views",
-        "customColumn2",
         "platform",
         "genre",
         "gender",
@@ -105,7 +105,7 @@
         "pfmStatus",
         "pfmShowTitle",
         "pfmShowId",
-        "_id",
+        "customColumn2",
         "v0_2023_12_28",
         "v1_2024_01_13",
         "v2_2024_01_31",
@@ -115,7 +115,8 @@
     "dynamicPropertyPathList": [
         {"key": "tableData"},
         {"key": "onPageChange"},
-        {"key": "onPageSizeChange"}
+        {"key": "onPageSizeChange"},
+        {"key": "primaryColumns.customColumn2.isCellVisible"}
     ],
     "displayName": "Table",
     "bottomRow": 120,
@@ -297,7 +298,7 @@
             "isDisabled": false,
             "allowSameOptionsInNewRow": true,
             "validation": {},
-            "isCellVisible": true,
+            "isCellVisible": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( No_of_crawls.selectedOptionValue!= \"\"))}}",
             "isDerived": true,
             "textSize": "0.875rem",
             "iconName": "timeline-bar-chart",
