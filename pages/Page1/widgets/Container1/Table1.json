@@ -111,8 +111,9 @@
         {"key": "onPageSizeChange"},
         {"key": "primaryColumns.customColumn2.isCellVisible"}
     ],
+    "compactMode": "DEFAULT",
     "displayName": "Table",
-    "bottomRow": 106,
+    "bottomRow": 111,
     "columnWidthMap": {
         "v3_2024_02_09": 156,
         "gender": 127,
