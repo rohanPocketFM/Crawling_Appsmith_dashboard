@@ -1,5 +1,5 @@
 {
-    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+    "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
     "setAdaptiveYMin": false,
     "mobileBottomRow": 43,
     "widgetName": "Chart1",
@@ -28,8 +28,6 @@
     "parentColumnSpace": 6.9375,
     "dynamicTriggerPathList": [{"key": "onDataPointClick"}],
     "dynamicBindingPathList": [
-        {"key": "borderRadius"},
-        {"key": "boxShadow"},
         {"key": "chartData.noieao82zy.data"},
         {"key": "customEChartConfig"}
     ],
@@ -82,7 +80,7 @@
         }
     },
     "onDataPointClick": "",
-    "customEChartConfig": "{{ ((chartType) => ( \n{\n  xAxis: {\n\t\t type: 'time',\n\t\t  \"boundaryGap\": [\"10%\", \"10%\"]\n\t},\n  yAxis: {\n\t\tmin:\"dataMin\",\n\t\tmax:\"dataMax\",\n\n\t},\n  series: [\n    {\n      symbolSize: 20,\n      data: chart_data_process.funcChart()\n\t\t\t\n\t\t\t,type: 'line',\n\t\t\t\n\t\t\t\n\t\t}\n  ]\n}\n))(Chart1.chartType) }}",
+    "customEChartConfig": "{{ ((chartType) => ( \n{\n\t \"title\": {\n    \"text\": Table1.triggeredRow.title,\n    \"left\": \"center\",\n    \"top\": \"top\"\n  },\n  \"tooltip\": {\n    \"trigger\": \"axis\",\n\t},\n\t grid: {\n    left: '100', \n    right: '50', \n    top: '80', \n    bottom: '60'\n  },\n  xAxis: {\n\t\t type: 'time',\n\t\t  \"boundaryGap\": [\"10%\", \"10%\"]\n\t},\n  yAxis: {\n\t\tmin:\"dataMin\",\n\t\tmax:\"dataMax\",\n\n\t},\n  series: [\n    {\n      symbolSize: 20,\n      data: chart_data_process.funcChart()\n\t\t\t\n\t\t\t,type: 'line',\n\t\t\t\n\t\t\t\n\t\t}\n  ]\n}\n))(Chart1.chartType) }}",
     "flexVerticalAlignment": "start",
     "showDataPointLabel": false,
     "key": "wgjalul0xb",
@@ -102,7 +100,7 @@
     "responsiveBehavior": "fill",
     "yAxisName": "views",
     "chartName": "Views Trend",
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "borderRadius": "0.375rem",
     "mobileLeftColumn": 8,
     "xAxisName": "Crawl date",
     "chartType": "CUSTOM_ECHART"
