@@ -8,5 +8,6 @@ export default {
 		bookCompleteStatusSelect.setSelectedOption("");
 		Book_title_search.setValue("");
 		No_of_crawls.setSelectedOption("");
+		onPocketFM.setValue(false)
 	}
 }

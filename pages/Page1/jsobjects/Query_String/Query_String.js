@@ -22,6 +22,9 @@ export default {
 		if (inCatalogueMultiSelect.selectedOptionValues.length > 0) {
 			query["inCatalogue"]={ $in : inCatalogueMultiSelect.selectedOptionValues}
 		};
+		if (onPocketFM.isSwitchedOn){
+			query["pfmStatus"] = {$exists:true}
+		};
 
 		return query
 	},
