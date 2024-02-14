@@ -48,7 +48,7 @@
     "dynamicTriggerPathList": [{"key": "onOptionChange"}],
     "labelPosition": "Top",
     "labelTextColor": "#71717a",
-    "sourceData": "{{\n(Platform_Metadata.data[0].crawlDates.map((elem,ind)=>({ \"label\":String(ind+1),\n\"value\":ind+1})))}}",
+    "sourceData": "{{\n(Platform_Metadata.data[0].crawlDates.map((elem,ind)=>({ \"label\":String(ind+1),\n\"value\":ind+1}))).concat([{\"label\": \"Latest only\",\"value\":\"\"}])}}",
     "key": "hy4anm62dr",
     "labelTextSize": "0.875rem",
     "isDeprecated": false,
