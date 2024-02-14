@@ -1,7 +1,7 @@
 {
     "boxShadow": "none",
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.a7b19dc8b31d68fcff57f1d2c0084a18.svg",
-    "labelText": "Show Views of last 'n' Crawls",
+    "labelText": "Views of last N crawls",
     "topRow": 36,
     "labelWidth": 5,
     "type": "SELECT_WIDGET",

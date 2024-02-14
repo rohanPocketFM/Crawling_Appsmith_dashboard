@@ -2,7 +2,8 @@ export default {
 
 	crawlDatesDict() {
 		let d = {};
-		const crawl_dates = Platform_Metadata.data[0].crawlDates
+		let noOfCrawl= No_of_crawls.selectedOptionValue
+		const crawl_dates = Platform_Metadata.data[0].crawlDates.slice(-noOfCrawl)
 		console.log("crawl_dates",crawl_dates)
 		crawl_dates.forEach((elem,index) =>{
 			d[elem]=index
@@ -20,14 +21,14 @@ export default {
 			let datarow = elem;
 			datarow.views = datarow.views.toLocaleString()
 			if (noOfCrawl != ""){
-				elem.timeSeries.reverse().forEach(e=>{
+				elem.timeSeries.slice(0,noOfCrawl).reverse().forEach(e=>{
 					if(crawlDateIndex.hasOwnProperty(e.crawlDate)){
 						let ind = crawlDateIndex[e.crawlDate]
 						datarow[`v${ind}_${e.crawlDate.replace(/-/g,'_')}`] = e.views.toLocaleString()
 					}
 				})
-				delete datarow.timeSeries;
 			}
+			delete datarow.timeSeries;
 			data.push(datarow)
 		})
 		return data
