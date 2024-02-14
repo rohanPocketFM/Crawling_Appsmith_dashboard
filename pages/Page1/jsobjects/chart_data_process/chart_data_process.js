@@ -10,9 +10,10 @@ export default {
 			maxView = e.views > maxView ? e.views: maxView
 			return [e.crawlDate,e.views]
 		})
+		if (maxView==minView){maxView+=100000; minView-=100000}
 		console.log(processedData)
 		let normaliser
-		if (minView /10000 > 1){
+		if ((maxView - minView) /100000 > 1){
 			normaliser = 10000
 		}
 		else{
@@ -20,7 +21,7 @@ export default {
 		}
 		// console.log('minView=',minView,'Maxview=',maxView)
 		let l = Math.floor((minView - (maxView - minView)*0.15)/normaliser) * normaliser
-		let r = Math.floor((maxView + (maxView - minView)*0.12)/normaliser) * normaliser
+		let r = Math.floor((maxView + (maxView - minView)*0.15)/normaliser) * normaliser
 		console.log('l ',l,' r ',r)
 		let options = 
 				{
@@ -61,8 +62,5 @@ export default {
 
 	},
 
-	formatter (params) {
-		const date = new Date(params[0].axisValue);
-		return date.toLocaleDateString();
-	}
+
 }
