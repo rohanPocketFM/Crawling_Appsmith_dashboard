@@ -38,9 +38,8 @@ export default {
 		queryP["pfmShowTitle"]=1
 		queryP["pfmShowId"]=1
 		queryP["views"]= { $arrayElemAt: ["$timeSeries.views", 0]}
-		if (No_of_crawls.selectedOptionValue!=""){
-			queryP["timeSeries"]={ $slice: ["$timeSeries",parseInt(No_of_crawls.selectedOptionValue)] }
-		}
+		queryP["timeSeries"]=1
+		
 		return queryP
 	}
 }
