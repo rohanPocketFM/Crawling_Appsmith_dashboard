@@ -1,12 +1,12 @@
 {
     "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-    "setAdaptiveYMin": false,
+    "setAdaptiveYMin": true,
     "allowScroll": false,
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.8eea39845729f7f4bfadeecd3810a09d.svg",
     "topRow": 4,
     "type": "CHART_WIDGET",
     "chartData": {"noieao82zy": {
-        "data": "{{chart_data_process.funcChart()}}",
+        "data": "[\n    {\n      \"x\": \"2024-02-09\",\n      \"y\": 63199752\n    },\n    {\n      \"x\": \"2024-01-31\",\n      \"y\": 63121568\n    },\n    {\n      \"x\": \"2024-01-13\",\n      \"y\": 63012598\n    },\n    {\n      \"x\": \"2023-12-28\",\n      \"y\": 62958659\n    }\n  ]",
         "color": "#3b82f6",
         "seriesName": ""
     }},
@@ -15,7 +15,6 @@
     "dynamicBindingPathList": [
         {"key": "borderRadius"},
         {"key": "boxShadow"},
-        {"key": "chartData.noieao82zy.data"},
         {"key": "customEChartConfig"}
     ],
     "leftColumn": 2,
