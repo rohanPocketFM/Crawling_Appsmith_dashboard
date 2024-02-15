@@ -10,14 +10,18 @@ export default {
 			maxView = e.views > maxView ? e.views: maxView
 			return [e.crawlDate,e.views]
 		})
-		if (maxView==minView){maxView+=100000; minView-=100000}
+		if (maxView-minView<1000){maxView+=500; minView-=500}
+		else if(maxView-minView<10000){maxView+=3000; minView-=3000}
 		console.log(processedData)
 		let normaliser
 		if ((maxView - minView) /100000 > 1){
 			normaliser = 10000
 		}
-		else{
+		else if ((maxView - minView) /10000 > 1){
 			normaliser = 1000
+		}
+		else {
+			normaliser = 100
 		}
 		// console.log('minView=',minView,'Maxview=',maxView)
 		let l = Math.floor((minView - (maxView - minView)*0.15)/normaliser) * normaliser
