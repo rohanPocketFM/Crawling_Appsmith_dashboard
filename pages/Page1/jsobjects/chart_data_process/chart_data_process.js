@@ -36,6 +36,9 @@ export default {
 					},
 					tooltip: {
 						trigger: 'axis',  // 'axis' triggers the tooltip when hovering over data points
+						"formatter": function (params) {
+							return `${params[0].data[0]}<br><h2 style="color:#4169E1;">${params[0].data[1].toLocaleString() }</h2>`;
+						},
 					},
 					grid: {
 						left: '100', 
