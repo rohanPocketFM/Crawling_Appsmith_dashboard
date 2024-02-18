@@ -3,9 +3,9 @@
     "boxShadow": "none",
     "mobileBottomRow": 22,
     "widgetName": "Submit_form",
-    "onClick": "{{UpdatePfmStatusQuery.run().then(() => {\n  showAlert('Updated Successfully', 'success');\n}).catch(() => {\n  showAlert('could not update', 'error');\n});}}",
+    "onClick": "{{UpdatePfmStatusQuery.run().then(() => {\n  showAlert('Updated Successfully', 'success');\nQuery_or_search.isSwitchedOn ?  Find1book.run() : Q_Response_Process_multiCrawl.queryResponseProcessor()\n}).catch(() => {\n  showAlert('could not update', 'error');\n});}}",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "dynamicPropertyPathList": [],
+    "dynamicPropertyPathList": [{"key": "onClick"}],
     "displayName": "Button",
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
     "searchTags": [

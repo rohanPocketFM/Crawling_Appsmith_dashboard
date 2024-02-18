@@ -31,7 +31,7 @@
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
     "isVisible": "{{!!PlatformSelect.selectedOptionLabel && (Platform_Metadata.data.length==1)}}",
     "label": "On Pocket FM / Testing",
-    "defaultSwitchState": true,
+    "defaultSwitchState": false,
     "version": 1,
     "parentId": "59rw5mx0bq",
     "tags": ["Toggles"],
