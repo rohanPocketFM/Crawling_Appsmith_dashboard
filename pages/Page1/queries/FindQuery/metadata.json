@@ -29,7 +29,7 @@
           }
         },
         "body": {
-          "data": "{\n  \"aggregate\": \"books\",\n  \"pipeline\": [\n  {\n    $match:\n      {   \n\t\t\t\t{{PlatformSelect.selectedOptionValue === \"\"? \"\" : [\"\",\"platform\",\":\" ,PlatformSelect.selectedOptionValue,\",\"].join('\"')}} \n\t\t\t\t{{GenderSelect.selectedOptionValue === \"\"? \"\" : [\"\",\"gender\",\":\" ,GenderSelect.selectedOptionValue,\",\"].join('\"')}}\n\t\t\t\t{{GenreMultiSelect.selectedOptionValues.length === 0? \"\" : [\"genre:{ $in :[\" ,GenreMultiSelect.selectedOptionValues.join('\",\"'),\"] },\"].join('\"')}}\n\t\t\t  {{TagsMultiSelect.selectedOptionValues.length === 0? \"\" : [\"tags:{ $in :[\" ,TagsMultiSelect.selectedOptionValues.join('\",\"'),\"] },\"].join('\"')}}\n\t\t\t\t\t\t\t\t\t\t\t\n      }\n  },\n  {\n    $project: {\n\t\t\t_id:0,\n      title: 1,\n      genre: 1,\n\t\t\tplatform:1,\n      tags: 1,\n      chaptersTotal: 1,\n      bookCreateTime: 1,\n      rating: 1,\n      gender: 1,\n      numOfRatings: 1,\n      views: {\n        $arrayElemAt: [\"$timeSeries.views\", 0],\n      },\n    },\n  },\n  {\n    $sort: {\n      views: -1,\n    },\n  },\n],\n  \"cursor\": {}\n}\n"
+          "data": "{\n  \"aggregate\": \"books\",\n  \"pipeline\": [\n  {\n    $match: {{Query_String.filter()}}   \n  },\n\t{\n    $sort: {\n\t\t\t\"timeSeries.views\":-1\n  \t}\n\t},\n\t{\n\t\t$skip: {{(Table1.pageNo - 1)*Table1.pageSize}}\n\t},\n\t{\n  \t\"$limit\": {{Table1.pageSize}}\n  },\n  {\n    $project: {{Query_String.project()}}\n  }\n],\n  \"cursor\": {}\n}\n"
         },
         "collection": {
           "data": "books",
