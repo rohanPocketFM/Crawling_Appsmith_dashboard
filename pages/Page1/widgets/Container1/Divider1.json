@@ -1,7 +1,7 @@
 {
     "mobileBottomRow": 46,
     "widgetName": "Divider1",
-    "thickness": "2\n\n\n",
+    "thickness": "2",
     "dynamicPropertyPathList": [{"key": "isVisible"}],
     "displayName": "Divider",
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.3b7d47d7bd70da418a827287042cbb7f.svg",
