@@ -2,7 +2,8 @@ export default {
 	
 	myFun1 () {
 
-      let myChart = echarts.init(document.getElementById('main'));
+		
+      let myChart = echarts.init(document.getElementById('Iframe1'));
 
       // Specify the configuration items and data for the chart
       let option = {
