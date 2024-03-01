@@ -64,8 +64,8 @@ export default {
 						}
 					]
 				}
-
-		return options
+		console.log(options)
+		return JSON.stringify(options)
 
 	},
 

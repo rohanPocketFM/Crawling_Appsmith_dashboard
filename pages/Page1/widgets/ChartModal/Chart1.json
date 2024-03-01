@@ -19,7 +19,7 @@
     ],
     "leftColumn": 2,
     "onDataPointClick": "",
-    "customEChartConfig": "{{ ((chartType) => ( chart_data_process.funcChart()))(Chart1.chartType) }}",
+    "customEChartConfig": "{{ ((chartType) => (  chart_data_process.funcChart()))(Chart1.chartType) }}",
     "flexVerticalAlignment": "start",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
     "isVisible": true,

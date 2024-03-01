@@ -17,7 +17,7 @@ export default {
 			query["chaptersTotal"] = {$gte: ChapterFilter.text}
 		};
 		if (bookCompleteStatusSelect.selectedOptionValue != "") {
-			query["genre"] = bookCompleteStatusSelect.selectedOptionValue
+			query["status"] = bookCompleteStatusSelect.selectedOptionValue
 		};
 		if (inCatalogueMultiSelect.selectedOptionValues.length > 0) {
 			query["inCatalogue"]={ $in : inCatalogueMultiSelect.selectedOptionValues}

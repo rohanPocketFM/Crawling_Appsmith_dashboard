@@ -1,34 +1,29 @@
 export default {
-	
+
 	myFun1 () {
 
+		return `
+		<!DOCTYPE html>
+		<html lang="en">
+		<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Loaded Page</title>
+		<!-- Include echarts library using a script tag -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.2.2/echarts.min.js"></script>
+		</head>
+		<body>
+		<!-- Add an element for the chart -->
+		<div id="main" style="width: 600px; height: 400px;"></div>
+		<script>
+		let chartDom = document.getElementById('main');
+		let myChart = echarts.init(chartDom);
+		let option;
+		option = ${chart_data_process.funcChart()};
+		option && myChart.setOption(option);
+		</script>
+		</body>
+		</html>`
 		
-      let myChart = echarts.init(document.getElementById('Iframe1'));
-
-      // Specify the configuration items and data for the chart
-      let option = {
-        title: {
-          text: 'ECharts Getting Started Example'
-        },
-        tooltip: {},
-        legend: {
-          data: ['sales']
-        },
-        xAxis: {
-          data: ['Shirts', 'Cardigans', 'Chiffons', 'Pants', 'Heels', 'Socks']
-        },
-        yAxis: {},
-        series: [
-          {
-            name: 'sales',
-            type: 'bar',
-            data: [5, 20, 36, 10, 10, 20]
-          }
-        ]
-      };
-
-      // Display the chart using the configuration items and data just specified.
-      myChart.setOption(option);
-
 	}
 }
