@@ -7,7 +7,7 @@
     "displayName": "Iframe",
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.a84667dbdc548d14f7c83df551151550.svg",
     "searchTags": ["embed"],
-    "topRow": 6,
+    "topRow": 4,
     "bottomRow": 47,
     "parentRowSpace": 10,
     "source": "https://www.example.com",
