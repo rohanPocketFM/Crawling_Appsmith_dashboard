@@ -10,7 +10,7 @@ export default {
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Loaded Page</title>
 		<!-- Include echarts library using a script tag -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.2.2/echarts.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
 		</head>
 		<body>
 		<!-- Add an element for the chart -->
