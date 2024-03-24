@@ -19,7 +19,7 @@ export default {
 		let chartDom = document.getElementById('main');
 		let myChart = echarts.init(chartDom);
 		let option;
-		option = ${chart_data_process.funcChart()};
+		option = ${JSON.stringify( chart_data_process.funcChart())};
 		option && myChart.setOption(option);
 		</script>
 		</body>

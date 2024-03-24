@@ -27,6 +27,11 @@ export default {
 		let l = Math.floor((minView - (maxView - minView)*0.15)/normaliser) * normaliser
 		let r = Math.floor((maxView + (maxView - minView)*0.15)/normaliser) * normaliser
 		console.log('l ',l,' r ',r)
+		
+		let formatterFunction = function(params) {
+    return `${params[0].data[0]}<br><h2 style="color:#4169E1;">${params[0].data[1].toLocaleString()}</h2>`;
+		};
+		let formatterString = formatterFunction.toString();
 		let options = 
 				{
 					title: {
@@ -36,9 +41,9 @@ export default {
 					},
 					tooltip: {
 						trigger: 'axis',  // 'axis' triggers the tooltip when hovering over data points
-						"formatter": function (params) {
-							return `${params[0].data[0]}<br><h2 style="color:#4169E1;">${params[0].data[1].toLocaleString() }</h2>`;
-						},
+						"formatter": function(params) {
+						return `${params[0].data[0]}<br><h2 style="color:#4169E1;">${params[0].data[1].toLocaleString()}</h2>`;
+						}
 					},
 					grid: {
 						left: '100', 
@@ -65,7 +70,7 @@ export default {
 					]
 				}
 		console.log(options)
-		return JSON.stringify(options)
+		return options
 
 	},
 
