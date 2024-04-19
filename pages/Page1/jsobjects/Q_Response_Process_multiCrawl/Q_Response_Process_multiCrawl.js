@@ -19,6 +19,8 @@ export default {
 		let data=[]
 		dataIn.forEach(elem=>{
 			let datarow = JSON.parse(JSON.stringify(elem));
+			let views=0
+			
 			datarow.views = datarow.views.toLocaleString()
 			if (noOfCrawl != ""){
 				elem.timeSeries.slice(0,noOfCrawl).reverse().forEach(e=>{
