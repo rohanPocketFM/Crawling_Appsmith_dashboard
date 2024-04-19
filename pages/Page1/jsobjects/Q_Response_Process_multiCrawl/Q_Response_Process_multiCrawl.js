@@ -19,8 +19,7 @@ export default {
 		let data=[]
 		dataIn.forEach(elem=>{
 			let datarow = JSON.parse(JSON.stringify(elem));
-			let views=0
-			
+			if ((datarow.hasOwnProperty('views'))){
 			datarow.views = datarow.views.toLocaleString()
 			if (noOfCrawl != ""){
 				elem.timeSeries.slice(0,noOfCrawl).reverse().forEach(e=>{
@@ -29,7 +28,17 @@ export default {
 						datarow[`v${ind}_${e.crawlDate.replace(/-/g,'_')}`] = e.views.toLocaleString()
 					}
 				})
-			}
+			}}
+			if ((datarow.hasOwnProperty('playsTotal'))){
+			datarow.playsTotal = datarow.playsTotal.toLocaleString()
+			if (noOfCrawl != ""){
+				elem.timeSeries.slice(0,noOfCrawl).reverse().forEach(e=>{
+					if(crawlDateIndex.hasOwnProperty(e.crawlDate)){
+						let ind = crawlDateIndex[e.crawlDate]
+						datarow[`v${ind}_${e.crawlDate.replace(/-/g,'_')}`] = e.playsTotal.toLocaleString()
+					}
+				})
+			}}
 			delete datarow.timeSeries;
 			data.push(datarow)
 		})
