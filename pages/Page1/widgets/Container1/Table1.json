@@ -82,7 +82,7 @@
         }
     },
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "columnUpdatedAt": 1713519673821,
+    "columnUpdatedAt": 1713519918141,
     "originalBottomRow": 111,
     "primaryColumnId": "_id",
     "defaultSelectedRowIndices": [0],
@@ -93,8 +93,8 @@
         "title",
         "customColumn4",
         "customColumn2",
-        "platform",
         "genre",
+        "platform",
         "bookCreateTime",
         "bookUrl",
         "bookId",
