@@ -1,6 +1,6 @@
 {
     "boxShadow": "none",
-    "allowSelectAll": false,
+    "allowSelectAll": true,
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.801e0376f5d71c420e7b490da23a44a6.svg",
     "labelText": "Featured in Catalogue",
     "topRow": 24,
