@@ -1,44 +1,54 @@
 {
-    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-    "mobileBottomRow": 38,
-    "widgetName": "Iframe1",
-    "srcDoc": "{{JSObject1.myFun1()}}",
-    "dynamicPropertyPathList": [],
-    "displayName": "Iframe",
-    "iconSVG": "https://appcdn.appsmith.com/static/media/icon.a84667dbdc548d14f7c83df551151550.svg",
-    "searchTags": ["embed"],
-    "topRow": 4,
-    "bottomRow": 47,
-    "parentRowSpace": 10,
-    "source": "https://www.example.com",
-    "type": "IFRAME_WIDGET",
-    "hideCard": false,
-    "mobileRightColumn": 28,
-    "borderOpacity": 100,
-    "animateLoading": true,
-    "parentColumnSpace": 6.9375,
-    "dynamicTriggerPathList": [],
-    "leftColumn": 2,
-    "dynamicBindingPathList": [
-        {"key": "borderRadius"},
-        {"key": "boxShadow"},
-        {"key": "srcDoc"}
-    ],
-    "borderWidth": 1,
-    "flexVerticalAlignment": "start",
-    "key": "9n4nx015xo",
-    "isDeprecated": false,
-    "rightColumn": 62,
-    "widgetId": "n37evzvpgw",
-    "isVisible": true,
-    "version": 1,
-    "parentId": "732d7zmipm",
-    "tags": ["Display"],
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "mobileTopRow": 6,
-    "responsiveBehavior": "fill",
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "mobileLeftColumn": 4,
-    "onSrcDocChanged": "{{}}"
+  "animateLoading": true,
+  "borderOpacity": 100,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": 1,
+  "bottomRow": 47,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "displayName": "Iframe",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "srcDoc"
+    }
+  ],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "hideCard": false,
+  "iconSVG": "https://appcdn.appsmith.com/static/media/icon.a84667dbdc548d14f7c83df551151550.svg",
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "9n4nx015xo",
+  "leftColumn": 2,
+  "mobileBottomRow": 38,
+  "mobileLeftColumn": 4,
+  "mobileRightColumn": 28,
+  "mobileTopRow": 6,
+  "onSrcDocChanged": "{{}}",
+  "parentColumnSpace": 6.9375,
+  "parentId": "732d7zmipm",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 62,
+  "searchTags": [
+    "embed"
+  ],
+  "source": "https://www.example.com",
+  "srcDoc": "{{JSObject1.myFun1()}}",
+  "tags": [
+    "Display"
+  ],
+  "topRow": 4,
+  "type": "IFRAME_WIDGET",
+  "version": 1,
+  "widgetId": "n37evzvpgw",
+  "widgetName": "Iframe1"
 }

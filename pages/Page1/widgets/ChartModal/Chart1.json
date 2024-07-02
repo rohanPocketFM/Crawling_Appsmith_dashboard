@@ -1,110 +1,124 @@
 {
-    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-    "setAdaptiveYMin": true,
-    "allowScroll": false,
-    "iconSVG": "https://appcdn.appsmith.com/static/media/icon.8eea39845729f7f4bfadeecd3810a09d.svg",
-    "topRow": 4,
-    "type": "CHART_WIDGET",
-    "chartData": {"noieao82zy": {
-        "data": "[\n    {\n      \"x\": \"2024-02-09\",\n      \"y\": 63199752\n    },\n    {\n      \"x\": \"2024-01-31\",\n      \"y\": 63121568\n    },\n    {\n      \"x\": \"2024-01-13\",\n      \"y\": 63012598\n    },\n    {\n      \"x\": \"2023-12-28\",\n      \"y\": 62958659\n    }\n  ]",
-        "color": "#3b82f6",
-        "seriesName": ""
-    }},
-    "animateLoading": true,
-    "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-    "dynamicBindingPathList": [
-        {"key": "borderRadius"},
-        {"key": "boxShadow"},
-        {"key": "customEChartConfig"}
-    ],
-    "leftColumn": 2,
-    "onDataPointClick": "",
-    "customEChartConfig": "{{ ((chartType) => (  chart_data_process.funcChart()))(Chart1.chartType) }}",
-    "flexVerticalAlignment": "start",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "isVisible": true,
-    "version": 1,
-    "tags": ["Display"],
-    "isLoading": false,
-    "chartName": "Views Trend",
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "xAxisName": "Crawl date",
-    "originalBottomRow": 41,
-    "mobileBottomRow": 43,
-    "widgetName": "Chart1",
-    "dynamicPropertyPathList": [],
-    "displayName": "Chart",
-    "searchTags": [
-        "graph",
-        "visuals",
-        "visualisations"
-    ],
-    "bottomRow": 41,
-    "parentRowSpace": 10,
-    "hideCard": false,
-    "mobileRightColumn": 32,
-    "parentColumnSpace": 6.9375,
-    "dynamicTriggerPathList": [{"key": "onDataPointClick"}],
-    "customFusionChartConfig": {
-        "type": "column2d",
-        "dataSource": {
-            "data": [
-                {
-                    "label": "Product1",
-                    "value": 20000
-                },
-                {
-                    "label": "Product2",
-                    "value": 22000
-                },
-                {
-                    "label": "Product3",
-                    "value": 32000
-                }
-            ],
-            "chart": {
-                "legendIconSides": "4",
-                "canvasPadding": "0",
-                "captionAlignment": "center",
-                "yAxisNameFontSize": "14",
-                "caption": "Sales Report",
-                "labelFontColor": "#716e6e",
-                "chartLeftMargin": "20",
-                "captionFontSize": "24",
-                "chartTopMargin": "10",
-                "theme": "fusion",
-                "legendIconAlpha": "100",
-                "chartBottomMargin": "10",
-                "labelFontSize": "12",
-                "xAxisNameFontColor": "#716e6e",
-                "yAxisNameFontColor": "#716e6e",
-                "captionFontColor": "#231F20",
-                "yAxisValueFontColor": "#716e6e",
-                "captionPadding": "20",
-                "yAxisName": "Revenue($)",
-                "legendIconBgAlpha": "100",
-                "xAxisName": "Product Line",
-                "alignCaptionWithCanvas": 1,
-                "chartRightMargin": "40",
-                "legendPosition": "top",
-                "xAxisNameFontSize": "14",
-                "yAxisValueFontSize": "12"
-            }
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "allowScroll": false,
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 41,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "chartData": {
+    "noieao82zy": {
+      "color": "#3b82f6",
+      "data": "[\n    {\n      \"x\": \"2024-02-09\",\n      \"y\": 63199752\n    },\n    {\n      \"x\": \"2024-01-31\",\n      \"y\": 63121568\n    },\n    {\n      \"x\": \"2024-01-13\",\n      \"y\": 63012598\n    },\n    {\n      \"x\": \"2023-12-28\",\n      \"y\": 62958659\n    }\n  ]",
+      "seriesName": ""
+    }
+  },
+  "chartName": "Views Trend",
+  "chartType": "CUSTOM_ECHART",
+  "customEChartConfig": "{{ ((chartType) => (  chart_data_process.funcChart()))(Chart1.chartType) }}",
+  "customFusionChartConfig": {
+    "dataSource": {
+      "chart": {
+        "alignCaptionWithCanvas": 1,
+        "canvasPadding": "0",
+        "caption": "Sales Report",
+        "captionAlignment": "center",
+        "captionFontColor": "#231F20",
+        "captionFontSize": "24",
+        "captionPadding": "20",
+        "chartBottomMargin": "10",
+        "chartLeftMargin": "20",
+        "chartRightMargin": "40",
+        "chartTopMargin": "10",
+        "labelFontColor": "#716e6e",
+        "labelFontSize": "12",
+        "legendIconAlpha": "100",
+        "legendIconBgAlpha": "100",
+        "legendIconSides": "4",
+        "legendPosition": "top",
+        "theme": "fusion",
+        "xAxisName": "Product Line",
+        "xAxisNameFontColor": "#716e6e",
+        "xAxisNameFontSize": "14",
+        "yAxisName": "Revenue($)",
+        "yAxisNameFontColor": "#716e6e",
+        "yAxisNameFontSize": "14",
+        "yAxisValueFontColor": "#716e6e",
+        "yAxisValueFontSize": "12"
+      },
+      "data": [
+        {
+          "label": "Product1",
+          "value": 20000
+        },
+        {
+          "label": "Product2",
+          "value": 22000
+        },
+        {
+          "label": "Product3",
+          "value": 32000
         }
+      ]
     },
-    "showDataPointLabel": false,
-    "key": "wgjalul0xb",
-    "isDeprecated": false,
-    "rightColumn": 62,
-    "widgetId": "fdjo4avwy2",
-    "minWidth": 450,
-    "parentId": "6v1dp03m4b",
-    "labelOrientation": "auto",
-    "renderMode": "CANVAS",
-    "mobileTopRow": 11,
-    "responsiveBehavior": "fill",
-    "yAxisName": "views",
-    "originalTopRow": 7,
-    "mobileLeftColumn": 8,
-    "chartType": "CUSTOM_ECHART"
+    "type": "column2d"
+  },
+  "displayName": "Chart",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "customEChartConfig"
+    }
+  ],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onDataPointClick"
+    }
+  ],
+  "flexVerticalAlignment": "start",
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "hideCard": false,
+  "iconSVG": "https://appcdn.appsmith.com/static/media/icon.8eea39845729f7f4bfadeecd3810a09d.svg",
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "wgjalul0xb",
+  "labelOrientation": "auto",
+  "leftColumn": 2,
+  "minWidth": 450,
+  "mobileBottomRow": 43,
+  "mobileLeftColumn": 8,
+  "mobileRightColumn": 32,
+  "mobileTopRow": 11,
+  "onDataPointClick": "",
+  "originalBottomRow": 41,
+  "originalTopRow": 7,
+  "parentColumnSpace": 6.9375,
+  "parentId": "6v1dp03m4b",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 62,
+  "searchTags": [
+    "graph",
+    "visuals",
+    "visualisations"
+  ],
+  "setAdaptiveYMin": true,
+  "showDataPointLabel": false,
+  "tags": [
+    "Display"
+  ],
+  "topRow": 4,
+  "type": "CHART_WIDGET",
+  "version": 1,
+  "widgetId": "fdjo4avwy2",
+  "widgetName": "Chart1",
+  "xAxisName": "Crawl date",
+  "yAxisName": "views"
 }

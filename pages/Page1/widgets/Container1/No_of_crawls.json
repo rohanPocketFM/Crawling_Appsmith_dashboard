@@ -1,70 +1,88 @@
 {
-    "boxShadow": "none",
-    "iconSVG": "https://appcdn.appsmith.com/static/media/icon.a7b19dc8b31d68fcff57f1d2c0084a18.svg",
-    "labelText": "Views of last N crawls",
-    "topRow": 36,
-    "labelWidth": 5,
-    "type": "SELECT_WIDGET",
-    "serverSideFiltering": false,
-    "topRowBeforeCollapse": 32,
-    "defaultOptionValue": "",
-    "animateLoading": true,
-    "leftColumn": 2,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "isVisible"},
-        {"key": "sourceData"}
-    ],
-    "placeholderText": "Optional Select",
-    "isDisabled": false,
-    "isRequired": false,
-    "dynamicHeight": "FIXED",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "bottomRowBeforeCollapse": 39,
-    "isVisible": "{{!!PlatformSelect.selectedOptionLabel && (Platform_Metadata.data.length==1) && (Platform_Metadata.data[0].crawlDates)!=undefined}}",
-    "version": 1,
-    "tags": [
-        "Suggested",
-        "Select"
-    ],
-    "isLoading": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 39,
-    "mobileBottomRow": 17,
-    "widgetName": "No_of_crawls",
-    "isFilterable": false,
-    "dynamicPropertyPathList": [
-        {"key": "sourceData"},
-        {"key": "isVisible"}
-    ],
-    "displayName": "Select",
-    "searchTags": ["dropdown"],
-    "bottomRow": 43,
-    "parentRowSpace": 10,
-    "hideCard": false,
-    "mobileRightColumn": 35,
-    "parentColumnSpace": 19.5,
-    "dynamicTriggerPathList": [{"key": "onOptionChange"}],
-    "labelPosition": "Top",
-    "labelTextColor": "#71717a",
-    "sourceData": "{{\n(Platform_Metadata.data[0].crawlDates.map((elem,ind)=>({ \"label\":String(ind+1),\n\"value\":ind+1}))).concat([{\"label\": \"Latest only\",\"value\":\"\"}])}}",
-    "key": "hy4anm62dr",
-    "labelTextSize": "0.875rem",
-    "isDeprecated": false,
-    "rightColumn": 13,
-    "widgetId": "wor4n3gayj",
-    "optionValue": "value",
-    "minWidth": 450,
-    "parentId": "59rw5mx0bq",
-    "labelAlignment": "left",
-    "renderMode": "CANVAS",
-    "mobileTopRow": 10,
-    "optionLabel": "label",
-    "responsiveBehavior": "fill",
-    "originalTopRow": 32,
-    "mobileLeftColumn": 15,
-    "maxDynamicHeight": 9000,
-    "onOptionChange": "",
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 43,
+  "bottomRowBeforeCollapse": 39,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "displayName": "Select",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "https://appcdn.appsmith.com/static/media/icon.a7b19dc8b31d68fcff57f1d2c0084a18.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isFilterable": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": "{{!!PlatformSelect.selectedOptionLabel && (Platform_Metadata.data.length==1) && (Platform_Metadata.data[0].crawlDates)!=undefined}}",
+  "key": "hy4anm62dr",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Views of last N crawls",
+  "labelTextColor": "#71717a",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 2,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 17,
+  "mobileLeftColumn": 15,
+  "mobileRightColumn": 35,
+  "mobileTopRow": 10,
+  "onOptionChange": "",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 39,
+  "originalTopRow": 32,
+  "parentColumnSpace": 19.5,
+  "parentId": "59rw5mx0bq",
+  "parentRowSpace": 10,
+  "placeholderText": "Optional Select",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 13,
+  "searchTags": [
+    "dropdown"
+  ],
+  "serverSideFiltering": false,
+  "sourceData": "{{\n(Platform_Metadata.data[0].crawlDates.map((elem,ind)=>({ \"label\":String(ind+1),\n\"value\":ind+1}))).concat([{\"label\": \"Latest only\",\"value\":\"\"}])}}",
+  "tags": [
+    "Suggested",
+    "Select"
+  ],
+  "topRow": 36,
+  "topRowBeforeCollapse": 32,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "wor4n3gayj",
+  "widgetName": "No_of_crawls"
 }

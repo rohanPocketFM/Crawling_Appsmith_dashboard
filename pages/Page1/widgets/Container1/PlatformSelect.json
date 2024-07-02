@@ -1,68 +1,82 @@
 {
-    "boxShadow": "none",
-    "iconSVG": "https://appcdn.appsmith.com/static/media/icon.a7b19dc8b31d68fcff57f1d2c0084a18.svg",
-    "labelText": "Platform",
-    "topRow": 5,
-    "labelWidth": 5,
-    "type": "SELECT_WIDGET",
-    "serverSideFiltering": false,
-    "defaultOptionValue": "",
-    "animateLoading": true,
-    "leftColumn": 2,
-    "dynamicBindingPathList": [
-        {"key": "sourceData"},
-        {"key": "borderRadius"}
-    ],
-    "labelTooltip": "Mandatory",
-    "placeholderText": "Platform to query",
-    "isDisabled": false,
-    "isRequired": true,
-    "dynamicHeight": "FIXED",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "isVisible": true,
-    "version": 1,
-    "tags": [
-        "Suggested",
-        "Select"
-    ],
-    "isLoading": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "mobileBottomRow": 13,
-    "widgetName": "PlatformSelect",
-    "isFilterable": true,
-    "dynamicPropertyPathList": [
-        {"key": "sourceData"},
-        {"key": "onOptionChange"}
-    ],
-    "displayName": "Select",
-    "searchTags": ["dropdown"],
-    "bottomRow": 12,
-    "parentRowSpace": 10,
-    "hideCard": false,
-    "mobileRightColumn": 22,
-    "parentColumnSpace": 14.5419921875,
-    "dynamicTriggerPathList": [
-        {"key": "onOptionChange"},
-        {"key": "onDropdownClose"}
-    ],
-    "labelPosition": "Top",
-    "onDropdownClose": "",
-    "sourceData": "{{Platform_Selector.data[0].options}}",
-    "key": "c8r9p7ed5x",
-    "labelTextSize": "0.875rem",
-    "isDeprecated": false,
-    "rightColumn": 13,
-    "widgetId": "puq4srqkq9",
-    "optionValue": "value",
-    "minWidth": 450,
-    "parentId": "59rw5mx0bq",
-    "labelAlignment": "left",
-    "renderMode": "CANVAS",
-    "mobileTopRow": 6,
-    "optionLabel": "label",
-    "responsiveBehavior": "fill",
-    "mobileLeftColumn": 2,
-    "maxDynamicHeight": 9000,
-    "onOptionChange": "{{Platform_Metadata.run()\n.then(filters_reset.reset()) }}",
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 12,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "displayName": "Select",
+  "dynamicBindingPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    },
+    {
+      "key": "onDropdownClose"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "https://appcdn.appsmith.com/static/media/icon.a7b19dc8b31d68fcff57f1d2c0084a18.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "c8r9p7ed5x",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Platform",
+  "labelTextSize": "0.875rem",
+  "labelTooltip": "Mandatory",
+  "labelWidth": 5,
+  "leftColumn": 2,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 13,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 22,
+  "mobileTopRow": 6,
+  "onDropdownClose": "",
+  "onOptionChange": "{{Platform_Metadata.run()\n.then(filters_reset.reset()) }}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "parentColumnSpace": 14.5419921875,
+  "parentId": "59rw5mx0bq",
+  "parentRowSpace": 10,
+  "placeholderText": "Platform to query",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 13,
+  "searchTags": [
+    "dropdown"
+  ],
+  "serverSideFiltering": false,
+  "sourceData": "{{Platform_Selector.data[0].options}}",
+  "tags": [
+    "Suggested",
+    "Select"
+  ],
+  "topRow": 5,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "puq4srqkq9",
+  "widgetName": "PlatformSelect"
 }

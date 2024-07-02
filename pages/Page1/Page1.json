@@ -1,29 +1,16 @@
 {
+  "gitSyncId": "659f137055999216851b9d72_659f137055999216851b9d74",
   "unpublishedPage": {
-    "name": "Page1",
-    "slug": "page1",
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-          "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1174,
-          "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "topRow": 0,
+          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
           "bottomRow": 1170,
-          "containerStyle": "none",
-          "snapRows": 125,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
+          "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
           "canExtend": true,
-          "version": 89,
-          "minHeight": 900,
-          "parentColumnSpace": 1,
-          "dynamicTriggerPathList": [],
+          "containerStyle": "none",
+          "detachFromLayout": true,
           "dynamicBindingPathList": [
             {
               "key": "borderRadius"
@@ -32,44 +19,23 @@
               "key": "boxShadow"
             }
           ],
+          "dynamicTriggerPathList": [],
           "leftColumn": 0,
-          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Page1_Platform_Selector",
-              "name": "Platform_Selector",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Page1_Pfm_Show_Search",
-              "name": "Pfm_Show_Search",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "encodeURIComponent(Form_pfm_show_search.text)"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "Page1",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "minHeight": 900,
+          "parentColumnSpace": 1,
+          "parentRowSpace": 1,
+          "rightColumn": 1174,
+          "snapColumns": 64,
+          "snapRows": 125,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "version": 89,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": []
-  },
-  "deleted": false,
-  "gitSyncId": "659f137055999216851b9d72_659f137055999216851b9d74"
+    "name": "Page1",
+    "slug": "page1"
+  }
 }

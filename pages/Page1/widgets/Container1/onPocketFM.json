@@ -1,45 +1,57 @@
 {
-    "boxShadow": "none",
-    "mobileBottomRow": 38,
-    "widgetName": "onPocketFM",
-    "dynamicPropertyPathList": [{"key": "isVisible"}],
-    "displayName": "Switch",
-    "iconSVG": "https://appcdn.appsmith.com/static/media/icon.afbd826fee9d09b12c5cde30a8c6fe62.svg",
-    "searchTags": ["boolean"],
-    "topRow": 39,
-    "bottomRow": 43,
-    "parentRowSpace": 10,
-    "type": "SWITCH_WIDGET",
-    "alignWidget": "LEFT",
-    "hideCard": false,
-    "mobileRightColumn": 28,
-    "animateLoading": true,
-    "parentColumnSpace": 10.03125,
-    "dynamicTriggerPathList": [],
-    "leftColumn": 16,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "isVisible"}
-    ],
-    "labelPosition": "Left",
-    "isDisabled": false,
-    "key": "wunubq1qa5",
-    "isDeprecated": false,
-    "rightColumn": 28,
-    "dynamicHeight": "FIXED",
-    "widgetId": "oqnvog6k84",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "isVisible": "{{!!PlatformSelect.selectedOptionLabel && (Platform_Metadata.data.length==1)}}",
-    "label": "On Pocket FM / Testing",
-    "defaultSwitchState": false,
-    "version": 1,
-    "parentId": "59rw5mx0bq",
-    "tags": ["Toggles"],
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "mobileTopRow": 34,
-    "responsiveBehavior": "fill",
-    "mobileLeftColumn": 16,
-    "maxDynamicHeight": 9000,
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignWidget": "LEFT",
+  "animateLoading": true,
+  "bottomRow": 43,
+  "boxShadow": "none",
+  "defaultSwitchState": false,
+  "displayName": "Switch",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "hideCard": false,
+  "iconSVG": "https://appcdn.appsmith.com/static/media/icon.afbd826fee9d09b12c5cde30a8c6fe62.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": "{{!!PlatformSelect.selectedOptionLabel && (Platform_Metadata.data.length==1)}}",
+  "key": "wunubq1qa5",
+  "label": "On Pocket FM / Testing",
+  "labelPosition": "Left",
+  "leftColumn": 16,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 38,
+  "mobileLeftColumn": 16,
+  "mobileRightColumn": 28,
+  "mobileTopRow": 34,
+  "parentColumnSpace": 10.03125,
+  "parentId": "59rw5mx0bq",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 28,
+  "searchTags": [
+    "boolean"
+  ],
+  "tags": [
+    "Toggles"
+  ],
+  "topRow": 39,
+  "type": "SWITCH_WIDGET",
+  "version": 1,
+  "widgetId": "oqnvog6k84",
+  "widgetName": "onPocketFM"
 }
